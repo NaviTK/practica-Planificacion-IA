@@ -24,15 +24,28 @@
     ;; Inicialización de las funciones numéricas
     (= (ciudades-visitadas) 0)
     (= (min-ciudades) 3)            ;; El cliente quiere visitar como mínimo 3 ciudades
+
+    (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 2)
+    (= (min-dias-ciudad madrid) 1) (= (max-dias-ciudad madrid) 1)
+    (= (min-dias-ciudad paris) 1) (= (max-dias-ciudad paris) 1)
+    (= (min-dias-ciudad roma) 1) (= (max-dias-ciudad roma) 1)
+    (= (min-dias-ciudad londres) 1) (= (max-dias-ciudad londres) 1)
+
+    (= (dias-visitados) 0)
+    (= (min-dias) 4)
   )
 
   (:goal
     (and
       (viaje-empezado)
       (>= (ciudades-visitadas) (min-ciudades))  ;; Objetivo: Haber visitado 3 o más ciudades
+      
+      (>= (dias-visitados) (min-dias))
+      (forall (?c - ciudad) (imply (visitada ?c) (elegido-dias ?c)))    
     )
   )
 
-  ;; ¡ESTA ES LA LÍNEA QUE FALTA PARA SOLUCIONAR EL ERROR!
+  ;; TODO ¿solucionar error?
   (:metric minimize (ciudades-visitadas))
+
 )
