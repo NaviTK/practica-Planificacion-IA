@@ -45,6 +45,8 @@
       (visitada ?c)
       (alojado ?h)                         
       (increase (ciudades-visitadas) 1)    ;; <--- ¡CAMBIADO AQUÍ! De 'assign' a 'increase'
+
+      (increase (precio-total) (precio-hotel ?h))
     )
   )
 

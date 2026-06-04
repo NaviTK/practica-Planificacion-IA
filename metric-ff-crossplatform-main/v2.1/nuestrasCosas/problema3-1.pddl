@@ -34,8 +34,8 @@
     (= (dias-visitados) 0)
     (= (min-dias) 4)
 
-    (= (precio-vuelo barcelona madrid) 10) (= (precio-vuelo madrid barcelona) 1)
-    (= (precio-vuelo madrid paris) 10) (= (precio-vuelo paris madrid) 30)
+    (= (precio-vuelo barcelona madrid) 10) (= (precio-vuelo madrid barcelona) 1000000)
+    (= (precio-vuelo madrid paris) 10) (= (precio-vuelo paris madrid) 10)
     (= (precio-vuelo paris roma) 10) (= (precio-vuelo roma paris) 10)
     (= (precio-vuelo roma londres) 10) (= (precio-vuelo londres roma) 10)
     (= (precio-vuelo londres barcelona) 10) (= (precio-vuelo barcelona londres) 10)
@@ -43,7 +43,7 @@
     (= (precio-hotel h_bcn) 10)
     (= (precio-hotel h_mad) 10)
     (= (precio-hotel h_par) 10)
-    (= (precio-hotel h_rom) 10)
+    (= (precio-hotel h_rom) 1000000)
     (= (precio-hotel h_lon) 10)
 
     (= (precio-total) 0)

@@ -34,7 +34,7 @@
     (= (dias-visitados) 0)
     (= (min-dias) 4)
 
-    (= (interes barcelona) 2)
+    (= (interes barcelona) 3)
     (= (interes madrid) 2)
     (= (interes paris) 2)
     (= (interes roma) 1)
