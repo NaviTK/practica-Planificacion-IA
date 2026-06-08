@@ -25,7 +25,7 @@
     (= (ciudades-visitadas) 0)
     (= (min-ciudades) 3)            ;; El cliente quiere visitar como mínimo 3 ciudades
 
-    (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 2)
+    (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 1)
     (= (min-dias-ciudad madrid) 1) (= (max-dias-ciudad madrid) 1)
     (= (min-dias-ciudad paris) 1) (= (max-dias-ciudad paris) 1)
     (= (min-dias-ciudad roma) 1) (= (max-dias-ciudad roma) 1)
@@ -34,8 +34,8 @@
     (= (dias-visitados) 0)
     (= (min-dias) 4)
 
-    (= (interes barcelona) 3)
-    (= (interes madrid) 2)
+    (= (interes barcelona) 1)
+    (= (interes madrid) 3)
     (= (interes paris) 2)
     (= (interes roma) 1)
     (= (interes londres) 2)

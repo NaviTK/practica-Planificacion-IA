@@ -23,13 +23,13 @@
 
     ;; Inicialización de las funciones numéricas
     (= (ciudades-visitadas) 0)
-    (= (min-ciudades) 3)            ;; El cliente quiere visitar como mínimo 3 ciudades
+    (= (min-ciudades) 3)         
 
     (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 2)
-    (= (min-dias-ciudad madrid) 1) (= (max-dias-ciudad madrid) 1)
-    (= (min-dias-ciudad paris) 1) (= (max-dias-ciudad paris) 1)
-    (= (min-dias-ciudad roma) 1) (= (max-dias-ciudad roma) 1)
-    (= (min-dias-ciudad londres) 1) (= (max-dias-ciudad londres) 1)
+    (= (min-dias-ciudad madrid) 2) (= (max-dias-ciudad madrid) 2)
+    (= (min-dias-ciudad paris) 2) (= (max-dias-ciudad paris) 2)
+    (= (min-dias-ciudad roma) 2) (= (max-dias-ciudad roma) 2)
+    (= (min-dias-ciudad londres) 1) (= (max-dias-ciudad londres) 2)
 
     (= (dias-visitados) 0)
     (= (min-dias) 4)
@@ -46,6 +46,6 @@
   )
 
   ;; TODO ¿solucionar error?
-  (:metric minimize (ciudades-visitadas))
+  (:metric minimize (dias-visitados))
 
 )

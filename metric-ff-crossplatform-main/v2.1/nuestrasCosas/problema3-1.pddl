@@ -3,7 +3,7 @@
   
   (:objects
     barcelona madrid paris roma londres - ciudad
-    h_bcn h_mad h_par h_rom h_lon - hotel
+    h_bcn h_mad h_par h_rom h_lon h_lon_barato - hotel
   )
 
   (:init
@@ -20,31 +20,33 @@
     (hotel-en h_par paris)
     (hotel-en h_rom roma)
     (hotel-en h_lon londres)
+    (hotel-en h_lon_barato londres)
 
     ;; Inicialización de las funciones numéricas
     (= (ciudades-visitadas) 0)
     (= (min-ciudades) 3)            ;; El cliente quiere visitar como mínimo 3 ciudades
 
-    (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 2)
+    (= (min-dias-ciudad barcelona) 1) (= (max-dias-ciudad barcelona) 1)
     (= (min-dias-ciudad madrid) 1) (= (max-dias-ciudad madrid) 1)
     (= (min-dias-ciudad paris) 1) (= (max-dias-ciudad paris) 1)
     (= (min-dias-ciudad roma) 1) (= (max-dias-ciudad roma) 1)
     (= (min-dias-ciudad londres) 1) (= (max-dias-ciudad londres) 1)
 
     (= (dias-visitados) 0)
-    (= (min-dias) 4)
+    (= (min-dias) 3)
 
-    (= (precio-vuelo barcelona madrid) 10) (= (precio-vuelo madrid barcelona) 1000000)
-    (= (precio-vuelo madrid paris) 10) (= (precio-vuelo paris madrid) 10)
-    (= (precio-vuelo paris roma) 10) (= (precio-vuelo roma paris) 10)
-    (= (precio-vuelo roma londres) 10) (= (precio-vuelo londres roma) 10)
-    (= (precio-vuelo londres barcelona) 10) (= (precio-vuelo barcelona londres) 10)
+    (= (precio-vuelo barcelona madrid) 100000) (= (precio-vuelo madrid barcelona) 100000)
+    (= (precio-vuelo madrid paris) 100) (= (precio-vuelo paris madrid) 100000)
+    (= (precio-vuelo paris roma) 100000) (= (precio-vuelo roma paris) 100000)
+    (= (precio-vuelo roma londres) 100000) (= (precio-vuelo londres roma) 100000)
+    (= (precio-vuelo londres barcelona) 100000) (= (precio-vuelo barcelona londres) 10)
 
-    (= (precio-hotel h_bcn) 10)
-    (= (precio-hotel h_mad) 10)
-    (= (precio-hotel h_par) 10)
-    (= (precio-hotel h_rom) 1000000)
-    (= (precio-hotel h_lon) 10)
+    (= (precio-hotel h_bcn) 100000)
+    (= (precio-hotel h_mad) 100000)
+    (= (precio-hotel h_par) 100000)
+    (= (precio-hotel h_rom) 100000)
+    (= (precio-hotel h_lon) 100000)
+    (= (precio-hotel h_lon_barato) 1000)
 
     (= (precio-total) 0)
   )

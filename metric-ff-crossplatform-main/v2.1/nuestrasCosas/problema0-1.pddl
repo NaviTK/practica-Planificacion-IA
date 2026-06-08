@@ -15,8 +15,6 @@
     (vuelo londres barcelona) (vuelo barcelona londres)
 
     ;; Distribución de hoteles (un hotel por ciudad)
-    (hotel-en h_bcn barcelona)
-    (hotel-en h_mad madrid)
     (hotel-en h_par paris)
     (hotel-en h_rom roma)
     (hotel-en h_lon londres)
@@ -32,7 +30,4 @@
       (>= (ciudades-visitadas) (min-ciudades))  ;; Objetivo: Haber visitado 3 o más ciudades
     )
   )
-
-  ;; TODO ¿solucionar error?
-  (:metric minimize (ciudades-visitadas))
 )
